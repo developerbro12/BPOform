@@ -1,0 +1,33 @@
+<div class="box">
+    <div class="title">
+       <u>
+        BPO FINAL EMAIL CONFIGURATION
+       </u>
+    </div>
+
+    <div class="flx space-around align-center m36">
+        <div>
+            Client
+        </div>
+        <div>
+            <select>
+                <option *ngFor="let item of client" value="{{item.id}}"> 
+                    {{item.name}}
+                  </option>
+            </select>
+        </div>
+    </div>
+
+    <div class="flx space-around align-center m36">
+        <div>
+            Report
+        </div>
+        <div>
+            <select>
+                <option *ngFor="let item of report" value="{{item.id}}"> 
+                    {{item.name}}
+                  </option>
+            </select>
+        </div>
+    </div>
+</div>
